@@ -12,7 +12,14 @@ import java.util.ArrayList;
 /**
  * Created by root on 1/2/18.
  */
-
+/*
+    We need to call the super i.e. parent class constructur
+    And we need to pass 4 parameters
+    1. Context context -> It is the context object we will get it from the activity while creating the instance
+    2. String databasename -> It is the name of the database and here we are passing the constant that we already defined
+    3. CursorFactory cursorFactory -> If we want a cursor to be initialized on the creation we can use cursor factory, it is optionall and that is why we passed null here
+    4. int version -> It is an int defining our database version
+  */
 public class DbManager extends SQLiteOpenHelper {                          //A helper class to manage database creation and version management.
     public DbManager(Context context) {
 
